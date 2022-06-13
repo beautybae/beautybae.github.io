@@ -1,0 +1,48 @@
+#landing-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../assets/img/background.jpg");
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.5;
+  filter: blur(3px);
+}
+
+#landing {
+  text-align: center;
+}
+
+#landing-paragraph {
+  /*text-align: center;*/
+  /*position: inherit;*/
+}
+
+#landing-section {
+  text-align: center;
+  height: 700px;
+}
+
+#bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../assets/img/Banner1.png");
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.5;
+  filter: blur(5px);
+}
+
+#landing-text {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  /*padding-top: 100px;*/
+}
+

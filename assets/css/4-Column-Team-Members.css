@@ -1,0 +1,123 @@
+.team2 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.team2 h1, .team2 h2, .team2 h3, .team2 h4, .team2 h5, .team2 h6 {
+  color: #3e4555;
+}
+
+.team2 h5 {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.team2 .font-weight-medium {
+  font-weight: 500;
+}
+
+.team2 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.team2 .pro-pic {
+  min-height: 200px;
+}
+
+.team2 .pro-pic .card-img-overlay {
+  background: rgba(26, 139, 243, 0.87);
+  display: none;
+}
+
+.team2 .pro-pic .card-img-overlay ul {
+  top: 50%;
+}
+
+.team2 .pro-pic .card-img-overlay ul li a {
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.team2 .pro-pic .card-img-overlay ul li a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+}
+
+.team2 .pro-pic:hover .card-img-overlay {
+  display: block;
+}
+
+#btnControl {
+  display: none;
+}
+
+btnControl:checked + label > img {
+  filter: grayscale(0%);
+}
+
+.select-icon {
+}
+
+products {
+  background-color: 15px;
+}
+
+#products {
+}
+
+.glass {
+  position: relative;
+  background: inherit;
+  overflow: hidden;
+  width: 70%;
+  height: 70%;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.glass:before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: -20px;
+  box-shadow: inset 0 0 500px rgba(255, 255, 255, .4);
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.modal-content {
+  background: linear-gradient(rgb(127,88,216,1.0), rgb(190,88,216,0.25));
+  backdrop-filter: blur(10px) !important;
+  border-radius: 30px !important;
+}
+
+.modal-open > :not(.modal) {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px) grayscale(75%);
+}
+
+.selectdiv {
+  /*color: rgb(127,88,216);*/
+  /*appearance: none;*/
+}
+
+.modal-open > :not(.modal) {
+  -moz-filter: blur(3px);
+  -webkit-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px) grayscale(50%);
+}
+

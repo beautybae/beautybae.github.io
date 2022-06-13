@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>beautybae</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/4-Column-Team-Members.css">
+    <link rel="stylesheet" href="assets/css/Articles-Cards.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-Calendar.css">
+    <link rel="stylesheet" href="assets/css/BS5-Jumbotron-with-background-Image.css">
+    <link rel="stylesheet" href="assets/css/Navbar-With-Button.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="assets/css/Recipe-Card.css">
+    <link rel="stylesheet" href="assets/css/Responsive-UI-Card.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body onload="initBook()">
+    <section id="heading"></section>
+    <nav class="navbar navbar-light navbar-expand-md" id="navbar" style="background: rgba(54,17,140,0.52);">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span style="color: rgba(255,255,255,0.9);"><em>beauty&nbsp;</em><strong>Bae</strong></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/index/#landing-section" style="color: rgba(255,255,255,0.9);"><strong>Home</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-section" style="color: #ffffff;"><strong>About</strong></a></li>
+                    <li class="nav-item" style="color: #ffffff;"><a class="nav-link" href="#team-section" style="color: #ffffff;"><strong>Team</strong></a></li>
+                    <li class="nav-item" style="color: #ffffff;"><a class="nav-link" href="#treatments-section" style="color: #ffffff;"><strong>Treatments</strong></a></li>
+                    <li class="nav-item" style="color: #ffffff;"><a class="nav-link" href="#reviews-section" style="color: #ffffff;"><strong>Reviews</strong></a></li>
+                </ul><button class="btn btn-info" type="button" style="background: rgba(126,87,216,0);border-color: rgba(211,211,211,0);box-shadow: 0px 0px;margin-right: 14px;" data-bs-target="#modal-register" data-bs-toggle="modal"><strong>Sign Up</strong></button><button class="btn btn-info" type="button" style="background: rgba(255,255,255,0);color: rgb(255,255,255);--bs-info: #7f58d8;--bs-info-rgb: 127,88,216;margin-right: 12px;border-radius: 29px;border-style: solid;border-color: rgb(255,255,255);" data-bs-target="#modal-login" data-bs-toggle="modal"><strong>Login</strong></button>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="padding-top: 45px;padding-bottom: 46px;">
+        <div class="row">
+            <div class="col">
+                <h1 class="h5 text-center" style="color: rgb(142,142,142);font-size: 14px;">Let Yourself Be Your Best Self</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="h1 text-center" style="font-size: 48px;"><strong>Appointment Form</strong></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="h5 text-center" style="color: rgb(142,142,142);font-size: 15px;">We're Waiting For You</h1>
+            </div>
+        </div>
+    </div>
+    <section id="treatments-section" style="color: rgb(55, 58, 60);">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="row gy-4 row-cols-2 row-cols-md-4">
+                        <div class="col">
+                            <div class="card border-0 shadow-none" id="julia" onclick="selectProvider(this.id)">
+                                <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" id="julia-image" width="130" height="130" src="assets/img/01-shutterstock_476340928-Irina-Bg.jpg">
+                                    <h5 class="fw-bold text-primary card-title mb-0" style="color: rgb(168,138,238);--bs-primary: rgb(168,138,238);--bs-primary-rgb: 168,138,238;"><span style="font-weight: normal !important;">Julia Jeune</span></h5>
+                                    <p class="text-muted card-text mb-2">Spa Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0 shadow-none" id="sammy" onclick="selectProvider(this.id)">
+                                <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" id="sammy-image" width="130" height="130" src="assets/img/istockphoto-1292861852-612x612.jpg">
+                                    <h5 class="fw-bold text-primary card-title mb-0" style="--bs-primary: rgb(168,138,238);--bs-primary-rgb: 168,138,238;"><span style="font-weight: normal !important;">Sammy Smize</span></h5>
+                                    <p class="text-muted card-text mb-2">Beauty Nurse Practitioner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0 shadow-none" id="ken" onclick="selectProvider(this.id)">
+                                <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" id="ken-image" width="130" height="130" src="assets/img/360_F_136187711_qeBMOwkPdTg1dCN8e5TR1AmduXDz60Xn.jpg">
+                                    <h5 class="fw-bold text-primary card-title mb-0" style="--bs-primary: rgb(168,138,238);--bs-primary-rgb: 168,138,238;color: rgb(168, 138, 238);"><span style="font-weight: normal !important;">Ken Barb</span></h5>
+                                    <p class="text-muted card-text mb-2">Beauty Nurse Practitioner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0 shadow-none" id="mazzy" onclick="selectProvider(this.id)">
+                                <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" id="mazzy-image" width="130" height="130" src="assets/img/59b6c4bfba785e36f932a317%20copy.png">
+                                    <h5 class="fw-bold text-primary card-title mb-0" style="--bs-primary: rgb(168,138,238);--bs-primary-rgb: 168,138,238;"><span style="font-weight: normal !important;">Dr. Mazzy Moore</span></h5>
+                                    <p class="text-muted card-text mb-2">Dermatologist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="services-row" style="margin-top: 20px;">
+                        <div class="col" id="consultation" onclick="bookService(this.id)">
+                            <div class="card border-0 shadow-none">
+                                <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" id="consultation-image" width="130" height="130" src="assets/img/Unknown-3.jpeg" style="margin-top: 15px;">
+                                    <h5 class="fw-bold text-primary card-title mb-0" style="color: rgb(127,88,216);--bs-primary: rgb(127,88,216);--bs-primary-rgb: 127,88,216;"><strong>Free Consultation</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="botox" onclick="bookService(this.id)">
+                            <div class="card border-0 shadow-none" id="botox-1">
+                                <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" id="botox-image" width="130" height="130" src="assets/img/Botox-56a2707d5f9b58b7d0ca622e.jpg" style="margin-top: 15px;">
+                                    <h5 class="fw-bold text-primary card-title mb-0" style="color: rgb(127,88,216);--bs-primary: rgb(127,88,216);--bs-primary-rgb: 127,88,216;"><strong>Botox</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="dermal" onclick="bookService(this.id)">
+                            <div class="card border-0 shadow-none" id="dermal" style="margin-top: 15px;">
+                                <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" id="dermal-image" width="130" height="130" src="assets/img/images-1.jpeg">
+                                    <h5 class="fw-bold text-primary card-title mb-0" style="--bs-primary: rgb(127,88,216);--bs-primary-rgb: 127,88,216;"><strong>Dermal Filler</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="body" onclick="bookService(this.id)">
+                            <div class="card border-0 shadow-none" id="body" style="margin-top: 15px;">
+                                <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" id="body-image" width="130" height="130" src="assets/img/vogo_new.png">
+                                    <h5 class="fw-bold text-primary card-title mb-0" style="--bs-primary: rgb(127,88,216);--bs-primary-rgb: 127,88,216;color: rgb(127, 88, 216);">Body Sculpting</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="microneedle" onclick="bookService(this.id)">
+                            <div class="card border-0 shadow-none" id="microneedle">
+                                <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin-top: 15px;"><img class="rounded-circle mb-3 fit-cover" id="microneedle-image" width="130" height="130" src="assets/img/Microneedling-with-PRP-Vampire-Facial.jpg">
+                                    <h5 class="fw-bold text-primary card-title mb-0" style="--bs-primary: rgb(127,88,216);--bs-primary-rgb: 127,88,216;"><strong>Microneedling Therapy</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="chem" onclick="bookService(this.id)">
+                            <div class="card border-0 shadow-none" id="chem" style="margin-top: 15px;">
+                                <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" id="chem-image" width="130" height="130" src="assets/img/Unknown-1.jpeg">
+                                    <h5 class="fw-bold text-primary card-title mb-0" style="--bs-primary: rgb(127,88,216);--bs-primary-rgb: 127,88,216;"><strong>Chemical Peels</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="hair" onclick="bookService(this.id)">
+                            <div class="card border-0 shadow-none" id="hair">
+                                <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin-top: 15px;"><img class="rounded-circle mb-3 fit-cover" id="hair-image" width="130" height="130" src="assets/img/1968441.jpg">
+                                    <h5 class="fw-bold text-primary card-title mb-0" style="--bs-primary: rgb(127,88,216);--bs-primary-rgb: 127,88,216;"><strong>Hair Rejuvenation</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="date-time">
+        <div class="container" id="date-time-container" style="padding-top: 46px;padding-bottom: 60px;">
+            <div class="row" id="date-time-row">
+                <div class="col" id="date-column"><label class="form-label" id="date-label">Date :&nbsp;</label><input id="date-picker" type="date" style="height: 37px;" required=""></div>
+                <div class="col"><label class="form-label">Time:&nbsp;</label><select id="time-picker" required="" style="text-align: center;padding: 7px;--bs-primary: rgb(127,88,216);--bs-primary-rgb: 127,88,216;">
+                        <optgroup label="This is a group">
+                            <option value="11:00 am" selected="">11:00 am</option>
+                            <option value="11:30 am">11:30 am</option>
+                            <option value="12: 00 pm">12:00 pm</option>
+                        </optgroup>
+                    </select></div>
+                <div class="col"><label class="form-label">Promo Code:&nbsp;</label><input type="text" id="promo-code"></div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding-top: 30px;"><button class="btn btn-primary" id="confirm-button" type="button" style="border-radius: 29px;border-style: none;background: rgb(125,88,216);" data-bs-target="#modal-register-1" data-bs-toggle="modal">Confirm Appointment</button></div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-login">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color: rgb(53,9,82);"><strong>Welcome Back!</strong></h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <p style="font-size: 12px;border-color: rgb(255,255,255);color: rgb(255,255,255);padding-top: -5px;">Don't have an account already?&nbsp;<button class="btn btn-primary" type="button" style="--bs-primary: rgb(127,88,216);--bs-primary-rgb: 127,88,216;color: rgb(53,9,82);background: rgba(39,128,227,0);border-style: none;font-size: 10px;text-align: left;" data-bs-target="#modal-register" data-bs-toggle="modal"><strong>Register</strong></button></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label" style="color: rgb(53,9,82);"><strong>email</strong></label></div>
+                        <div class="col"><input type="email"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label" style="color: rgb(53,9,82);"><strong>password</strong></label></div>
+                        <div class="col"><input type="password"></div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" type="button" style="border-radius: 84px;background: rgb(179,62,160);border-style: none;box-shadow: 0px 6px 15px rgb(0,0,0);padding-right: 50px;padding-left: 41px;margin: 18px;" data-bs-toggle="modal"><strong>Login</strong></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-register">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color: rgb(53,9,82);"><strong>Welcome In!</strong></h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <p style="font-size: 12px;border-color: rgb(255,255,255);color: rgb(255,255,255);padding-top: -5px;">Have an account already?&nbsp;<button class="btn btn-primary" type="button" style="--bs-primary: rgb(127,88,216);--bs-primary-rgb: 127,88,216;color: rgb(53,9,82);background: rgba(39,128,227,0);border-style: none;font-size: 10px;text-align: left;" data-bs-target="#modal-login" data-bs-toggle="modal"><strong>Login</strong></button></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label"><strong><span style="color: rgb(53, 9, 82);">name</span></strong></label></div>
+                        <div class="col"><input type="text"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label" style="color: rgb(53,9,82);"><strong>email</strong></label></div>
+                        <div class="col"><input type="email"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label" style="color: rgb(53,9,82);"><strong>password</strong></label></div>
+                        <div class="col"><input type="password"></div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" type="button" style="border-radius: 84px;background: rgb(179,62,160);border-style: none;box-shadow: 0px 6px 15px rgb(0,0,0);padding-right: 50px;padding-left: 41px;margin: 18px;" data-bs-toggle="modal"><strong>Register</strong></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-login-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color: rgb(53,9,82);"><strong>Welcome Back!</strong></h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <p style="font-size: 12px;border-color: rgb(255,255,255);color: rgb(255,255,255);padding-top: -5px;">Don't have an account already?&nbsp;<button class="btn btn-primary" type="button" style="--bs-primary: rgb(127,88,216);--bs-primary-rgb: 127,88,216;color: rgb(53,9,82);background: rgba(39,128,227,0);border-style: none;font-size: 10px;text-align: left;" data-bs-target="#modal-register-1"><strong>Register</strong></button></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label" style="color: rgb(53,9,82);"><strong>email</strong></label></div>
+                        <div class="col"><input type="email"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label" style="color: rgb(53,9,82);"><strong>password</strong></label></div>
+                        <div class="col"><input type="password"></div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" type="button" style="border-radius: 84px;background: rgb(179,62,160);border-style: none;box-shadow: 0px 6px 15px rgb(0,0,0);padding-right: 50px;padding-left: 41px;margin: 18px;" data-bs-target="#modal-confirmation" onclick="close()"><strong>Login</strong></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-register-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color: rgb(53,9,82);"><strong>Welcome In!</strong></h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <p style="font-size: 12px;border-color: rgb(255,255,255);color: rgb(255,255,255);padding-top: -5px;">Have an account already?&nbsp;<button class="btn btn-primary" type="button" style="--bs-primary: rgb(127,88,216);--bs-primary-rgb: 127,88,216;color: rgb(53,9,82);background: rgba(39,128,227,0);border-style: none;font-size: 10px;text-align: left;" data-bs-target="#modal-login-1"><strong>Login</strong></button></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label"><strong><span style="color: rgb(53, 9, 82);">name</span></strong></label></div>
+                        <div class="col"><input type="text"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label" style="color: rgb(53,9,82);"><strong>email</strong></label></div>
+                        <div class="col"><input type="email"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label" style="color: rgb(53,9,82);"><strong>password</strong></label></div>
+                        <div class="col"><input type="password"></div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" type="button" style="border-radius: 84px;background: rgb(179,62,160);border-style: none;box-shadow: 0px 6px 15px rgb(0,0,0);padding-right: 50px;padding-left: 41px;margin: 18px;" data-bs-toggle="modal" data-bs-target="#modal-confirmation" onclick="close()"><strong>Register</strong></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-confirmation">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color: rgb(53,9,82);"><strong>Appointment Confirmed</strong></h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding-bottom: 40px;">
+                    <div class="row">
+                        <div class="col"><label class="col-form-label text-nowrap text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-top: 7px;"><strong><span style="color: rgb(53, 9, 82);">Confirmation No:</span></strong></label></div>
+                        <div class="col"><label class="col-form-label d-xl-flex justify-content-xl-center align-items-xl-center" id="confirmation-value" style="text-align: left;font-size: 13px;"><span style="color: rgb(53, 9, 82);">A3DE8FH</span></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label text-nowrap text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-top: 7px;"><strong><span style="color: rgb(53, 9, 82);">Name:</span></strong></label></div>
+                        <div class="col"><label class="col-form-label d-xl-flex justify-content-xl-center align-items-xl-center" id="name-value" style="text-align: left;font-size: 13px;"><span style="color: rgb(53, 9, 82);">Amy Hazzle</span></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label text-nowrap text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-top: 7px;"><strong><span style="color: rgb(53, 9, 82);">Treatment:</span></strong></label></div>
+                        <div class="col"><label class="col-form-label d-xl-flex justify-content-xl-center align-items-xl-center" id="treatment-value" style="text-align: left;font-size: 13px;"><span style="color: rgb(53, 9, 82);">Consultation</span></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label text-nowrap text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-top: 7px;"><strong><span style="color: rgb(53, 9, 82);">Specialist:</span></strong></label></div>
+                        <div class="col"><label class="col-form-label d-xl-flex justify-content-xl-center align-items-xl-center" id="specialist-value" style="text-align: left;font-size: 13px;"><span style="color: rgb(53, 9, 82);">Julia Jeune</span></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label text-nowrap text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-top: 7px;"><strong><span style="color: rgb(53, 9, 82);">Date:&nbsp;</span></strong></label></div>
+                        <div class="col"><label class="col-form-label d-xl-flex justify-content-xl-center align-items-xl-center" id="date-value" style="text-align: left;font-size: 13px;"><span style="color: rgb(53, 9, 82);">2022/08/06</span></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label text-nowrap text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-top: 7px;text-align: left !important;"><strong><span style="color: rgb(53, 9, 82);">Time:</span></strong></label></div>
+                        <div class="col"><label class="col-form-label d-xl-flex justify-content-xl-center align-items-xl-center" id="time-value" style="text-align: left;font-size: 13px;"><span style="color: rgb(53, 9, 82);">12:00 pm</span></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label text-nowrap text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-top: 7px;text-align: left;"><strong><span style="color: rgb(53, 9, 82);">Estimated Cost:</span></strong></label></div>
+                        <div class="col"><label class="col-form-label d-xl-flex justify-content-xl-center align-items-xl-center" id="cost-value" style="text-align: left;font-size: 13px;"><span style="color: rgb(53, 9, 82);">Free</span></label></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="background: #7f58d8;">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#"><em>beauty&nbsp;</em><strong>Bae</strong></a></h3>
+                <p class="links"><a href="#">Home</a><strong> · </strong><a href="#landing">About</a><strong> · </strong><a href="#team">Team</a><strong> · </strong><a href="#treatments">Treatments</a><strong> · </strong><a href="#reviews">Reviews</a><strong>&nbsp;</strong></p>
+                <p class="company-name" style="color: rgb(255,255,255);"><strong>beautyBae © 2022</strong></p>
+            </div>
+            <div class="col-md-4 footer-about">
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span">21 Revolution Street</span> Paris, France</p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-start"> +1 555 512 3456</p>
+                    <div><i class="fa fa-clock-o footer-contacts-icon"></i>
+                        <p class="footer-center-info email text-start"> Tues - Sat: 9 am - 7 pm</p>
+                    </div>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank" style="color: rgb(254,254,254);">info@beautyBae.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/book.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
