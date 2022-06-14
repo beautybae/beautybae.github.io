@@ -27,15 +27,15 @@ function hideServices(){
 
 function selectProvider(id){
     hideServices();
-    for(let i = 0; i < services.length; i ++){
-        focusElementById(services[i]);
+    for(let i = 0; i < bookServices.length; i ++){
+        focusElementsById(bookServices[i]);
     }
     defocusElementById("julia");
     defocusElementById("sammy");
     defocusElementById("ken");
     defocusElementById("mazzy");
     
-    focusElementById(id);
+    focusElementsById(id);
     
     selectedProvider = id;
     selectedService = null;
@@ -69,7 +69,7 @@ function bookService(id){
         defocusElementById(services[i]);
     }
     selectedService = id;
-    focusElementById(id);
+    focusElementsById(id);
     showDateTimeRow();
 }
 
@@ -84,3 +84,6 @@ function showDateTimeRow(){
     document.getElementById("date-time-container").style.display = "block";  
 }
 
+function focusElementsById(id){
+    document.getElementById(id+"-image").style.filter = "grayscale(0%) brightness(100%)";
+}
